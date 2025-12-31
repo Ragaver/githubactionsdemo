@@ -15,4 +15,5 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Build Docker image
-      run: docker build -t ragava25/math_utils:latest .
+      run: docker build -t ragava25/math_utils:latest ./app
+
