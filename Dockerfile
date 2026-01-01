@@ -1,9 +1,10 @@
 FROM python:3.10-alpine
 
+COPY ./app
+
 WORKDIR /app
 
-COPY app/ /app/
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 CMD ["streamlit", "run", "streamlitui.py"]
