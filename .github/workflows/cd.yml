@@ -2,9 +2,8 @@ name: Docker Build
 
 on:
   workflow_run:
-    workflows: ["pyton_application"]  # Your CI workflow name
-    types:
-      - completed
+    workflows: ["Python_application"]
+    types: [completed]
 
 jobs:
   docker:
